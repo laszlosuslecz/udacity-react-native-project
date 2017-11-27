@@ -8,6 +8,7 @@ import reducer from './reducers'
 
 import DeckList from './components/DeckList'
 import CreateDeck from './components/CreateDeck'
+import Deck from './components/Deck'
 
 
 const Stack = StackNavigator({
@@ -16,7 +17,10 @@ const Stack = StackNavigator({
   },
   CreateDeck: {
     screen: CreateDeck,
-  }
+  }, 
+  DeckView: {
+    screen: Deck,
+  },
 })
 
 
