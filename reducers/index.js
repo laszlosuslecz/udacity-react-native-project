@@ -1,7 +1,7 @@
 import {
   FETCH_DECKS,
   CREATE_DECK
-} from './actions'
+} from '../actions'
 
 function deckReducer(state = {}, action) {
   switch(action.type) {
