@@ -15,7 +15,7 @@ export default class CreateDeck extends Component {
   onSubmit = () => {
     const { title } = this.state
     this.setState({title: ''})
-		this.props.navigation.navigate('Deck')
+		this.props.navigation.navigate('DeckView', {title: title})
   }
  
   render() {
