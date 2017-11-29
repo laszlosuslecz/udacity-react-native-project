@@ -14,7 +14,7 @@ export default class DeckList extends Component {
 
   render() {
     return(
-      <View>
+      <View style={styles.container}>
         <Text>Decklist</Text>
         <TouchableOpacity onPress={this.goToCreateDeck}>
           <Text>Create a deck</Text>
@@ -23,3 +23,12 @@ export default class DeckList extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 15,
+  }
+})

@@ -20,10 +20,10 @@ export default class CreateDeck extends Component {
  
   render() {
     return(
-      <View>
+      <View style={styles.container}>
         <Text>Create Deck</Text>
         <TextInput
-          style={{height: 40}}
+          style={{height: 40, width: 200}}
           placeholder="Please give a title for the new deck!"
           onChangeText={(title) => this.setState({title})}    
         ></TextInput>
@@ -36,3 +36,12 @@ export default class CreateDeck extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 15,
+  }
+})
